@@ -1,32 +1,19 @@
 <section class="todoapp">
   <header class="header">
     <h1>honey do</h1>
-    <input class="new-todo" placeholder="What needs to be done?" autofocus="">
+    <input class="new-todo" placeholder="what needs to be done?" autofocus="">
   </header>
-
   <section class="main">
     <ul class="todo-list">
+      <%= @lists.each do |list| %>
       <li>
         <div class="view">
-          <label><a href="#">Grocery List</a></label>
+          <label><%= link_to list.name, list_path(list) %></label>
         </div>
       </li>
-
-      <li>
-        <div class="view">
-          <label><a href="#">Reading List</a></label>
-        </div>
-      </li>
-
-      <li>
-        <div class="view">
-          <label><a href="#">Baking List</a></label>
-        </div>
-      </li>
-
+      <% end %>
     </ul>
   </section>
-
   <footer class="footer">
   </footer>
 </section>

@@ -27,3 +27,7 @@ lists
 
 items
   belongs to a list
+
+
+-Does it impact my DB?
+-Does it impact my URLs? '/lists/1'
