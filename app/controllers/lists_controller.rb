@@ -6,10 +6,11 @@ class ListsController < ApplicationController
   end
 
   def show
-    #load the list
-    #and which list
-    #params have all the data passed by the user
     @list = List.find(params[:id])
+  end
+
+  def create
+    raise params.inspect
   end
 
 end
