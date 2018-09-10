@@ -4,4 +4,8 @@ class ListsController < ApplicationController
     @lists = List.all
   end
 
+  def show
+    
+  end
+
 end
