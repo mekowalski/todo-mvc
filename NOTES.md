@@ -31,3 +31,10 @@ items
 
 -Does it impact my DB?
 -Does it impact my URLs? '/lists/1'
+
+Believe there are 5 total TodoMVC stages to complete
+1.Assets and Managin Lists
+2.Lists have Items
+3.Mark Items Complete
+4.Refactoring with Partials & Helpers
+5.Deleting Items
