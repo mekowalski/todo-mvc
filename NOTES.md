@@ -32,6 +32,8 @@ items
 -Does it impact my DB?
 -Does it impact my URLs? '/lists/1'
 
+# Step 3: Add Items to a List
+
 Believe there are 5 total TodoMVC stages to complete
 1.Assets and Managin Lists
 2.Lists have Items
