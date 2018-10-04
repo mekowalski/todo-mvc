@@ -33,6 +33,8 @@ items
 -Does it impact my URLs? '/lists/1'
 
 # Step 3: Add Items to a List
+-come back to Refactor Views into Partials and Helpers once TodoMVC 2 is completed
+-TodoMVC 2 is: Lists have Items, i'll be able to add Item piece(MVC)
 
 Believe there are 5 total TodoMVC stages to complete
 1.Assets and Managin Lists
