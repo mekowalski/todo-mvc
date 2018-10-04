@@ -2,7 +2,8 @@
   <header class="header">
     <h1>honey do</h1>
     <%= form_for(@list) do |f| %>
-      <%= f.text_field :name, :class => 'new-todo', :placeholder => 'add an item to the list'%>
+      <%= f.text_field :name, :class => 'new-todo' %>
+      <%= f.submit :style => 'display: none' %>
     <% end %>
   </header
 

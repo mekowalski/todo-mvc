@@ -1,8 +1,9 @@
 class ListsController < ApplicationController
 
   def index
-    @list = List.new #this instance variable is completely different from @create instantiation
+    @list = List.new
     @lists = List.all
+    #render 'lists/index.html.erb'
   end
 
   def show
@@ -16,8 +17,6 @@ class ListsController < ApplicationController
 
     redirect_to list_path(@list)
   end
-
-  #every action renders in the context of one http request
 
   private
   def list_params #strong params
