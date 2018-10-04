@@ -44,3 +44,7 @@ Believe there are 5 total TodoMVC stages to complete
 
 100418
 -not sure if this will change again with TodoMVC 2-5 code alongs, will see
+-most up to date code is different from code along presentation
+-therefore i don't have all the correct code and that's why my form isn't working
+-code along is actually out of order, when i am at the correct part then i will be able to work out this
+ part of the application(partials and helpers)
