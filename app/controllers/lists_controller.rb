@@ -15,7 +15,7 @@ class ListsController < ApplicationController
     @list.name = params[:list][:name]
     @list.save
 
-    redirect_to list_path(@list)
+    redirect_to list_url(@list)
   end
 
   private
