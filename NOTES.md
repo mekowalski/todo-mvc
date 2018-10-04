@@ -38,3 +38,7 @@ Believe there are 5 total TodoMVC stages to complete
 3.Mark Items Complete
 4.Refactoring with Partials & Helpers
 5.Deleting Items
+
+
+100418
+-not sure if this will change again with TodoMVC 2-5 code alongs, will see
