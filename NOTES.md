@@ -36,7 +36,7 @@ items
 -come back to Refactor Views into Partials and Helpers once TodoMVC 2 is completed
 -TodoMVC 2 is: Lists have Items, i'll be able to add Item piece(MVC)
 102218
--Make Items to List
+[x]Make Items to List
   List has many Items
   2   Grocery List
 
@@ -45,10 +45,15 @@ items
   1   bananas     2
   2   apples      2
 
+[x]Make items a List real
+[x]Need and Item table: associated with a List
+[]#create for and item in a List: what is the HTTP URL method
+-the form is present in the list show page
+-what URL does this imply?
 
-  -Make items a List real
-  -Need and Item table: associated with a List
-  -#create for and item in a List: what is the HTTP URL method
+POST /items #=> doesn't describe which list we are adding an item to
+An Item doesn't exist in app outside of context of the List it belongs to
+-Nested Resources : /lists/:id/items (Items are nested within this List, in terms of URL)
 
 
 Believe there are 5 total TodoMVC stages to complete
