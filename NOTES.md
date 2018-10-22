@@ -35,9 +35,15 @@ items
 # Step 3: Add Items to a List
 -come back to Refactor Views into Partials and Helpers once TodoMVC 2 is completed
 -TodoMVC 2 is: Lists have Items, i'll be able to add Item piece(MVC)
+102218
+-Make Items to List
+  -Make items a List real
+  -Need and Item table: associated with a List
+  -#create for and item in a List: what is the HTTP URL method
+
 
 Believe there are 5 total TodoMVC stages to complete
-1.Assets and Managin Lists
+1.Assets and Managing Lists
 2.Lists have Items
 3.Mark Items Complete
 4.Refactoring with Partials & Helpers
