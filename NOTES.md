@@ -37,6 +37,15 @@ items
 -TodoMVC 2 is: Lists have Items, i'll be able to add Item piece(MVC)
 102218
 -Make Items to List
+  List has many Items
+  2   Grocery List
+
+  Every Item belongs to a List
+  id  description list_id(foreign key)
+  1   bananas     2
+  2   apples      2
+
+
   -Make items a List real
   -Need and Item table: associated with a List
   -#create for and item in a List: what is the HTTP URL method
