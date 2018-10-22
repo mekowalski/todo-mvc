@@ -60,6 +60,28 @@ An Item doesn't exist in app outside of context of the List it belongs to
 [x]validate that Items have a description
 
 # Step 5: Add state(complete, incomplete) to Items in a List
+-get it working without JS or AJAX to build out more of the logic without complexity of JS
+
+-what URLs are needed and how might DB change
+-idea of item being complete/incomplete requires data
+-new forms for updating item status which means new URL
+/lists/1/items
+  PUT/PATCH to /lists/1/items/1
+  PUT/PATCH to /lists/:list_id/items/:id
+
+-need to steal checkbox HTML from TodoMVC dot com
+-add this to view
+<input class="toggle" type="checkbox">
+
+-also need JS function to submit form with checkbox click
+$(function(){
+  $('input.toggle').on('change', function(){
+    $(this).parents('from').trigger('submit')
+  })
+})
+
+
+# Delete an Item or List
 
 
 Believe there are 5 total TodoMVC stages to complete
