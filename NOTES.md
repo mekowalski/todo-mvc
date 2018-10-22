@@ -66,7 +66,7 @@ An Item doesn't exist in app outside of context of the List it belongs to
 -idea of item being complete/incomplete requires data
 -new forms for updating item status which means new URL
 /lists/1/items
-  PUT/PATCH to /lists/1/items/1
+  PUT/PATCH to /lists/1/items/1 -Updating Item 1 in List 1
   PUT/PATCH to /lists/:list_id/items/:id
 
 -need to steal checkbox HTML from TodoMVC dot com

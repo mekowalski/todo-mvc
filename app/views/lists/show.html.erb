@@ -13,10 +13,11 @@
     <label for="toggle-all">Mark all as complete</label>
     <ul class="todo-list">
       <% @list.items.each do |item| %>
-      <!-- currently adding too much login into view when it's not responsible for that -->
       <li class="<%= 'completed' if item.complete? %>">
         <div class="view">
-          <input class="toggle" type="checkbox" <%= "checked='check'" if item.complete? %> >
+           <form action="/">
+             <input class="toggle" type="checkbox" <%= "checked='check'" if item.complete? %> >
+           </form>
           <label><%= item.description %></label>
         </div>
       </li>
