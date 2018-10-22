@@ -1,6 +1,5 @@
 $(function(){
   $('input.toggle').on('change', function(){
-    $(this).parents('from').trigger('submit')
+    $(this).parents('form').trigger('submit')
   })
 })
- 

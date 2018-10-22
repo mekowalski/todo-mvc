@@ -76,7 +76,7 @@ An Item doesn't exist in app outside of context of the List it belongs to
 -also need JS function to submit form with checkbox click
 $(function(){
   $('input.toggle').on('change', function(){
-    $(this).parents('from').trigger('submit')
+    $(this).parents('form').trigger('submit')
   })
 })
 
