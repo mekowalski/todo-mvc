@@ -2,7 +2,6 @@
   <header class="header">
     <h1><%= @list.name %></h1>
     <%= form_for([@list, @item]) do |f| %>
-    <!-- rails macro: parent resource @list and the main resource of the form-->
       <%= f.text_field :description, class: "new-todo" %>
       <%= f.submit style: "display: none" %>
     <% end %>
