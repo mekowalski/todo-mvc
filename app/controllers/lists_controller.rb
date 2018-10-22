@@ -7,6 +7,7 @@ class ListsController < ApplicationController
 
   def show
     @list = List.find(params[:id])
+    @item = @list.item.build #calling items collection.build, 
   end
 
   def create

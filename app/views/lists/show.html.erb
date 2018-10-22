@@ -1,9 +1,10 @@
 <section class="todoapp">
   <header class="header">
     <h1><%= @list.name %></h1>
-    <%= form_for(Item.new) do |f| %>
-      <%= f.text_field :name, :class => "new-todo" %>
-      <%= f.submit :style => "display: none" %>
+    <%= form_for(Item.new, url: list_items_path(@list)) do |f| %>
+    <!-- never refer Models directly in view code -->
+      <%= f.text_field :description, class: "new-todo" %>
+      <%= f.submit style: "display: none" %>
     <% end %>
   </header>
 
