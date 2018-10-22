@@ -56,8 +56,10 @@ An Item doesn't exist in app outside of context of the List it belongs to
 -Nested Resources : /lists/:id/items (Items are nested within this List, in terms of URL )
 
 # Step 4: Adding Validations
--validate that Lists have a name
--validate that Items have a description
+[x]validate that Lists have a name
+[x]validate that Items have a description
+
+# Step 5: Add state(complete, incomplete) to Items in a List
 
 
 Believe there are 5 total TodoMVC stages to complete
