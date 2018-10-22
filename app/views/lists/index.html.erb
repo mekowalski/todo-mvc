@@ -15,6 +15,7 @@
       <%= @lists.each do |list| %>
       <li>
         <div class="view">
+          <input class="toggle" type="checkbox">
           <label><%= link_to list.name, list_path(list) %></label>
         </div>
       </li>
