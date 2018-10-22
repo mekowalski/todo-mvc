@@ -47,13 +47,17 @@ items
 
 [x]Make items a List real
 [x]Need and Item table: associated with a List
-[]#create for and item in a List: what is the HTTP URL method
+[x]#create for and item in a List: what is the HTTP URL method
 -the form is present in the list show page
 -what URL does this imply?
 
 POST /items #=> doesn't describe which list we are adding an item to
 An Item doesn't exist in app outside of context of the List it belongs to
--Nested Resources : /lists/:id/items (Items are nested within this List, in terms of URL)
+-Nested Resources : /lists/:id/items (Items are nested within this List, in terms of URL )
+
+# Step 4: Adding Validations
+-validate that Lists have a name
+-validate that Items have a description
 
 
 Believe there are 5 total TodoMVC stages to complete
