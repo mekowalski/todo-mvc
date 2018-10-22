@@ -2,11 +2,8 @@
   <header class="header">
     <h1>honey do</h1>
     <%= form_for(@list) do |f| %>
-      <% if @list.errors[:name].present? %>
-        <%= f.text_field :name, class: "new-todo" %>
-      <% else %>
-        <%= f.text_field :name, class: "new-todo", placeholder: "List must have name" %>
-      <% end %>
+      <%= f.text_field :name, class: "new-todo", placeholder: (@list.errors.full_messages_for(:name).first || "Enter a name for list") %>
+
       <%= f.submit style: "display: none" %>
     <% end %>
   </header>
