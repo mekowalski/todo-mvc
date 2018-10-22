@@ -1,23 +1,26 @@
 <section class="todoapp">
   <header class="header">
     <h1><%= @list.name %></h1>
-    <input class="new-todo" placeholder="add an item to this list" autofocus="">
+    <%= form_for(Item.new) do |f| %>
+      <%= f.text_field :name, :class => "new-todo" %>
+      <%= f.submit :style => "display: none" %>
+    <% end %>
   </header>
+
   <section class="main">
     <input class="toggle-all" type="checkbox">
     <label for="toggle-all">Mark all as complete</label>
     <ul class="todo-list">
       <% @list.items.each do |item| %>
-
       <li>
         <div class="view">
           <label><%= item.description %></label>
         </div>
       </li>
-
       <% end %>
     </ul>
   </section>
+
   <footer class="footer">
   </footer>
 </section>
