@@ -1,4 +1,7 @@
 class ItemsController < ApplicationController
+  protect_from_forgery with: :exception
+  before_action :authenticate_list!
+
   def create
     @list = List.find(params[:list_id])
     @item = @list.items.build(item_params)
