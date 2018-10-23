@@ -1,8 +1,4 @@
 <%= content_tag_for :li, item, class: li_class_for_item(item) do %>
-  <!-- still mixing ruby directly in HTML which is confusing
-  use and actionview helper-->
-  <!-- content_tag will properly make you the tag for the specific element -->
-  <!-- language consistent -->
   <div class="view">
     <%= form_for([@list, item]) do |f| %>
       <%= f.check_box :status, class: 'toggle', checked: item.complete? %>
