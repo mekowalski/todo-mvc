@@ -10,8 +10,12 @@ class ItemsController < ApplicationController
   end
 
   def update
-    raise params.inspect #the data the form submitted
-    #use that data to update the item described in URL
+    #what Item and i trying to update
+    @item = Item.find(params[:id])
+    @item.status = params[:item][:status] #0 or 1
+    @item.save
+
+    redirect_to list_path(@item.list)
   end
 
   private

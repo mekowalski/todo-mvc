@@ -17,12 +17,7 @@
       <li class="<%= "completed" if item.complete? %>">
         <div class="view">
           <%= form_for([@list, item]) do |f| %>
-          <%#= f.check_box :status, class: 'toggle', checked: (true if item.complete?) %>
-
-          <!-- this is what Rails created -->
-          <!-- <input name="item[status]" type="hidden" value="0"> -->
-          <!-- <input class="toggle" type="checkbox" value="1" name="item[status]" id="item_status"> -->
-            <input class="toggle" value="0" name="item[status]" type="checkbox" <%= "checked='checked'" if item.complete? %>>
+          <%= f.check_box :status, class: 'toggle', checked: (true if item.complete?) %>
           <% end %>
           <label><%= item.description %></label>
         </div>
