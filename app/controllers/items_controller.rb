@@ -10,7 +10,8 @@ class ItemsController < ApplicationController
   end
 
   def update
-    raise params.inspect
+    raise params.inspect #the data the form submitted
+    #use that data to update the item described in URL
   end
 
   private
