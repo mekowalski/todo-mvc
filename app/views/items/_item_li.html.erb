@@ -1,7 +1,8 @@
 <%= li_for_item(item) do %>
   <div class="view">
     <%= form_for_item_status(item) %>
-    <!-- create helper method to return this form -->
     <label><%= item.description %></label>
   </div>
 <% end %>
+
+<!-- 1. no logic in this view -->

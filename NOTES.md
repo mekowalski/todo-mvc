@@ -87,7 +87,6 @@ $(function(){
   1. start using partials in lists/show
   (fixed the content_tag_for issue in browser. just has to restart server!!!)
 
-
 # Step 6: Delete an Item or List
 
 
