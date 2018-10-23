@@ -80,6 +80,8 @@ $(function(){
   })
 })
 
+-When you uncheck a box of an Item, the browser shouldn't submit any data
+-When you check a box of an Item, then the browser does submit and change data
 
 # Delete an Item or List
 
