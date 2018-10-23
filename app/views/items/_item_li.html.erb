@@ -2,9 +2,11 @@
   <div class="view">
     <%= form_for_item_status(item) %>
     <label><%= item.description %></label>
-    <form action="<%= list_item_path(item.list, item) %>" method="POST">
-      <input type="hidden" name="_method" value="DELETE">
+
+    <%= form_tag(list_item_path(item.list, item)) do %>
+      <input type="hidden" name="_method" value="DELETE"> <!-- method override hack provided by Rack -->
 
     <button type="submit" class="destroy"></button>
+    <% end %>
   </div>
 <% end %>

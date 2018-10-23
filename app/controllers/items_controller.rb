@@ -1,6 +1,6 @@
 class ItemsController < ApplicationController
-  protect_from_forgery with: :exception
-  before_action :authenticate_list!
+  # protect_from_forgery with: :exception
+  # before_action :authenticate_list!
 
   def create
     @list = List.find(params[:list_id])
@@ -17,6 +17,10 @@ class ItemsController < ApplicationController
     @item.update(item_params)
 
     redirect_to list_path(@item.list)
+  end
+
+  def destroy
+    raise params.inspect
   end
 
   private
