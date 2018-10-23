@@ -88,6 +88,11 @@ $(function(){
   (fixed the content_tag_for issue in browser. just has to restart server!!!)
 
 # Step 6: Delete an Item or List
+[]need a new button/link for delete feature
+[]needs to his a URL
+  -RESTful convention: DELETE /lists/:list_id/items/:id
+[]Need controller action to process deletion of Item
+
 
 
 Believe there are 5 total TodoMVC stages to complete

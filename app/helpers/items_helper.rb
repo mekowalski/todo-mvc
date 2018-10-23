@@ -15,5 +15,3 @@ module ItemsHelper
     end
   end
 end
-
-#2. all logic is deligated in these helper methods
