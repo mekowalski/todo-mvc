@@ -91,6 +91,8 @@ $(function(){
 []need a new button/link for delete feature
 []needs to his a URL
   -RESTful convention: DELETE /lists/:list_id/items/:id
+  -how to trigger a delete request
+  -browsers only support GET(link) and POST(form submission)
 []Need controller action to process deletion of Item
 
 
