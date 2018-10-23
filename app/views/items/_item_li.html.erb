@@ -1,8 +1,7 @@
 <%= li_for_item(item) do %>
   <div class="view">
-    <%= form_for([@list, item]) do |f| %>
-      <%= f.check_box :status, class: 'toggle', checked: item.complete? %>
-    <% end %>
+    <%= form_for_item_status(item) %>
+    <!-- create helper method to return this form -->
     <label><%= item.description %></label>
   </div>
 <% end %>
