@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
-  get 'items/create'
   root 'lists#index'
+  get 'items/create'
+
+  resources :users
 
   resources :lists do
     resources :items
