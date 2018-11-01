@@ -114,3 +114,9 @@ Believe there are 5 total TodoMVC stages to complete
 -therefore i don't have all the correct code and that's why my form isn't working
 -code along is actually out of order, when i am at the correct part then i will be able to work out this
  part of the application(partials and helpers)
+
+
+110118
+-created new branch for authentication
+-i may merge it later if i really love the auth feature
+-also want to create a layout with a home button(at some point, not pertinent)
