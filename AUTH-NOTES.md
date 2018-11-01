@@ -3,10 +3,10 @@
   1. new User Model
   -email
 
-
+(routes created with User model in mind and RESTful routes)
 -What URLs do I need
-  GET /signup -form
-  POST /signup -create user in DB
+  GET /users/new -form
+  POST /users -create user in DB
 
   GET /login -form
-  POST /login -login the user
+  POST /sessions -login the user
