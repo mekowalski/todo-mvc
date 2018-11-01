@@ -120,3 +120,4 @@ Believe there are 5 total TodoMVC stages to complete
 -created new branch for authentication
 -i may merge it later if i really love the auth feature
 -also want to create a layout with a home button(at some point, not pertinent)
+-maybe work on helper methods for lists as similar to items
