@@ -6,7 +6,7 @@
 
 -What URLs do I need
   GET /signup -form
-  POST /signup
+  POST /signup -create user in DB
 
   GET /login -form
   POST /login -login the user
