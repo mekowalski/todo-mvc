@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   root 'lists#index'
   get 'items/create'
 
-  resources :users
+  resources :users, only: [:new, :create]
 
   resources :lists do
     resources :items
