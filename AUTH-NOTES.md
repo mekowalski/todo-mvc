@@ -10,3 +10,11 @@
 
   GET /login -form
   POST /sessions -login the user
+
+# Step 2: Logging in
+-if you're not logged in you can't see anything
+-go back to the login page
+
+[]create Sessions con
+GET /login sessions#new
+POST /sessions sessions#create
