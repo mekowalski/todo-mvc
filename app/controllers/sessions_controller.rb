@@ -5,8 +5,10 @@ class SessionsController < ApplicationController
   def create
     user = User.find_by(email: params[:email])
     session[:user_id] = user.id
-    # this isn't hitting raise in lists#index, not doing anything
-    # in rails server: No template found for SessionsController#create, rendering head :no_content
+    redirect_to root_path
+    # i put a redirect in here and it works after logging in but i don't know understand it working without
+    # redirect for video
+
   end
 
   # if user changes the string at all, garuanteed there's no other seesion on the server with that string
