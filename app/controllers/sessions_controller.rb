@@ -5,16 +5,11 @@ class SessionsController < ApplicationController
   def create
     user = User.find_by(email: params[:email])
     session[:user_id] = user.id
-    redirect_to root_path
-    # i put a redirect in here and it works after logging in but i don't know understand it working without
-    # redirect for video
-
+    redirect_to root_path #this was in video, i was blind therefore didn't include it
   end
 
-  # if user changes the string at all, garuanteed there's no other seesion on the server with that string
-  # in the sessions data, you can put in the attribute of the user
-  # be given a reciept
-  # cookie stores id of user session on the server
-  # then use that id to pull data that corresponds to that user
-  # ignore cookies, not secure
+  def destroy
+    reset_session
+    redirect_to login_path
+  end
 end
