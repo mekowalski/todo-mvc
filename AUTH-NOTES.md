@@ -19,6 +19,12 @@
 GET /login sessions#new
 POST /sessions sessions#create
 
--Currently, the root '/' is diaplying the lists#index BUT ListsController has before_action of
+-Currently, the root '/' is displaying the lists#index BUT ListsController has before_action of
  authentication_required and this is not being called
 -Therefore lists#index is displayed
+
+-Now root works correctly to redirect user to Login path/form
+-Login works, to display lists#index
+-Logout built with sessions#destroy, correctly logs out and redirects to login page
+-This is a cool part.  User has not association with lists but can create lists, add items to list and mark
+ items complete in a list
