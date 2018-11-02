@@ -1,8 +1,9 @@
 <section class="todoapp">
   <header class="header">
-    <h1>signup here</h1>
-    <%= form_for(@user) do |f| %>
-      <%= f.text_field :email, class: 'new-todo', placeholder: 'enter your email to signup' %>
+    <h1>Login!</h1>
+    <%= form_tag(sessions_path) do %>
+      <%= text_field_tag :email, '', class: 'new-todo', placeholder: 'Login with your email' %>
+      <!-- actionview helper: name, a value, then options in hash -->
     <% end %>
   </header>
 
