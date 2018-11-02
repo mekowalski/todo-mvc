@@ -18,3 +18,7 @@
 []create Sessions con
 GET /login sessions#new
 POST /sessions sessions#create
+
+-Currently, the root '/' is diaplying the lists#index BUT ListsController has before_action of
+ authentication_required and this is not being called
+-Therefore lists#index is displayed
