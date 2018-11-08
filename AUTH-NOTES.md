@@ -45,7 +45,8 @@ The Handshake
 - [x]link or button for option of logging/registering via github
 - [x]solve sessions#create
     - was running into issue of not being abl to retrieve user email from github but finally got it
-- []need to refactor a lot of logic out of #create
+- [x]need to refactor a lot of logic out of #create
+- [x]user model method: find_or_create_by_omniauth(auth_hash)
 
 OAUTH2 Flow
 1. user goes to /auth/github on my site
