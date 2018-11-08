@@ -57,3 +57,7 @@ OAUTH2 Flow
 5. then my app send secret code back to github
 6. github confirms that the code came from github and that my app received it
 7. github sends me back the user data
+  - Prevent man in the middle attack
+  - allows me to talk to github and github checks if app has been hacked
+8. check id user exists in my system by email, if yes then log them in
+9. otherwise, create a user based on their email and log them in
