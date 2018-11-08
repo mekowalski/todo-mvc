@@ -39,3 +39,6 @@ The Handshake
 - [x]oauth and oauth-gh gems
 - [x]build configuration with Rails initializer
 - [x]gh key and secret, create new application
+- [x]need to route the callback URL to sessions#create(most likely)
+- []modify sessions#create
+- []link or button for option of logging/registering via github
