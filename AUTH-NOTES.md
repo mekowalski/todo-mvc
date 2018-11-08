@@ -46,3 +46,14 @@ The Handshake
 - [x]solve sessions#create
     - was running into issue of not being abl to retrieve user email from github but finally got it
 - []need to refactor a lot of logic out of #create
+
+OAUTH2 Flow
+1. user goes to /auth/github on my site
+2. omniauth redirects user to github, providing github with key/secret identifying my app
+  - github needs to know which of 100000's apps that user github for auth, the user is trying to login to
+3. the user logs in with github
+4. github redirects user back to my app (callback URL) and provides my app with secret code representing
+  - user on github
+5. then my app send secret code back to github
+6. github confirms that the code came from github and that my app received it
+7. github sends me back the user data
