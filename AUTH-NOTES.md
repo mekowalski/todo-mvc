@@ -37,5 +37,5 @@ The Handshake
 4. Third part validates and sends back correct user data
 
 - [x]oauth and oauth-gh gems
-- []build configuration with Rails initializer
-- []gh key and secret, create new application
+- [x]build configuration with Rails initializer
+- [x]gh key and secret, create new application
