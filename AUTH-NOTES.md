@@ -35,3 +35,7 @@ The Handshake
 2. Third Party(Google, Github, etc) responds with a token
 3. Consumer(application) doesn't exactly know who the user is therefore sends token back to Third Party
 4. Third part validates and sends back correct user data
+
+- [x]oauth and oauth-gh gems
+- []build configuration with Rails initializer
+- []gh key and secret, create new application
