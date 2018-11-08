@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   post '/sessions', to: 'sessions#create'
   get '/logout', to: 'sessions#destroy'
   get '/auth/github/callback', to: 'sessions#create'
+  #user is sent to github to verify then github needs to send them back to application
 
   resources :users, only: [:new, :create]
 
