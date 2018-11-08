@@ -43,4 +43,6 @@ The Handshake
 - [x]modify sessions#create
     - currently still receiving errors
 - [x]link or button for option of logging/registering via github
-- []solve sessions#create
+- [x]solve sessions#create
+    - was running into issue of not being abl to retrieve user email from github but finally got it
+- []need to refactor a lot of logic out of #create
