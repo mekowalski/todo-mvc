@@ -1,10 +1,10 @@
 # Step 1: Integrate Basic Theme to Asset Pipeline
 
-[X]/ - Go to home page and see a stubbed out, non-dynamic page with theme
+- [X]/ - Go to home page and see a stubbed out, non-dynamic page with theme
 
 # Step 2: Allow people to CRUD lists
 
-[] ListsController
+- [x] ListsController
   #index
   -see all the lists
   -doubling as #new in that it present the person with a form to create a new list
@@ -33,10 +33,10 @@ items
 -Does it impact my URLs? '/lists/1'
 
 # Step 3: Add Items to a List
--come back to Refactor Views into Partials and Helpers once TodoMVC 2 is completed
--TodoMVC 2 is: Lists have Items, i'll be able to add Item piece(MVC)
+- come back to Refactor Views into Partials and Helpers once TodoMVC 2 is completed
+- TodoMVC 2 is: Lists have Items, i'll be able to add Item piece(MVC)
 102218
-[x]Make Items to List
+- [x]Make Items to List
   List has many Items
   2   Grocery List
 
@@ -45,19 +45,19 @@ items
   1   bananas     2
   2   apples      2
 
-[x]Make items a List real
-[x]Need and Item table: associated with a List
-[x]#create for and item in a List: what is the HTTP URL method
--the form is present in the list show page
--what URL does this imply?
+- [x]Make items a List real
+- [x]Need and Item table: associated with a List
+- [x]#create for and item in a List: what is the HTTP URL method
+- the form is present in the list show page
+- what URL does this imply?
 
 POST /items #=> doesn't describe which list we are adding an item to
 An Item doesn't exist in app outside of context of the List it belongs to
--Nested Resources : /lists/:id/items (Items are nested within this List, in terms of URL )
+- Nested Resources : /lists/:id/items (Items are nested within this List, in terms of URL )
 
 # Step 4: Adding Validations
-[x]validate that Lists have a name
-[x]validate that Items have a description
+- [x]validate that Lists have a name
+- [x]validate that Items have a description
 
 # Step 5: Add state(complete, incomplete) to Items in a List
 -get it working without JS or AJAX to build out more of the logic without complexity of JS
@@ -88,14 +88,15 @@ $(function(){
   (fixed the content_tag_for issue in browser. just has to restart server!!!)
 
 # Step 6: Delete an Item or List
-[x]need a new button/link for delete feature
-[x]needs to his a URL
+- [x]need a new button/link for delete feature
+- [x]needs to his a URL
   -RESTful convention: DELETE /lists/:list_id/items/:id
   -how to trigger a delete request
   -browsers only support GET(link) and POST(form submission)
-[x]Need controller action to process deletion of Item
+- [x]Need controller action to process deletion of Item
 
-# Step 7: Add user sign up and logging in
+# Step 7: Add user sign up/logging in AND now incorporate OmniAuth
+
 
 # Step 8: User has lists and can only see their own list
 
@@ -121,3 +122,5 @@ Believe there are 5 total TodoMVC stages to complete
 -i may merge it later if i really love the auth feature
 -also want to create a layout with a home button(at some point, not pertinent)
 -maybe work on helper methods for lists as similar to items
+
+-currently just working on new branch details before continuing with authentication
