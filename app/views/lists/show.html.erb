@@ -22,23 +22,25 @@
 
 <!-- embed a template -->
 <!-- make this generic, instead of item_22, it will be item_{{id}} -->
+<!-- Handlebars tempalte -->
 <script id='item-template' type="text/x-handlebars-template">
-  <li class="item" id="item_22">
+  <li class="item" id="item_{{id}}">
     <div class="view">
-      <form class="edit_item" id="edit_item_22" action="/lists/11/items/22" accept-charset="UTF-8" method="post">
+      <form class="edit_item" id="edit_item_{{id}}" action="/lists/<%= @item.list.id %>/items/{{id}}" accept-charset="UTF-8" method="post">
         <input name="utf8" type="hidden" value="✓">
         <input type="hidden" name="_method" value="patch">
-        <input type="hidden" name="authenticity_token" value="r9stadHoPnK3hMDHRYfPK8/51mg3RpItzxnXyq2tCBgtW2aHSKl4IhxwR8HJZK6szawxNt5wtN1Gdgg12JrBkg==">
+        <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+        <!-- Rails can generate authenticity_token for template -->
         <input name="item[status]" type="hidden" value="0">
         <input class="toggle" type="checkbox" value="1" name="item[status]" id="item_status">
       </form>
 
-      <label>Learn Handlebars</label>
+      <label>{{description}}</label>
 
-      <form class="button_to" method="post" action="/lists/11/items/22">
+      <form class="button_to" method="post" action="/lists/<%= @item.list.id %>/items/{{id}}">
         <input type="hidden" name="_method" value="delete">
         <input class="destroy" type="submit" value="x">
-        <input type="hidden" name="authenticity_token" value="r9stadHoPnK3hMDHRYfPK8/51mg3RpItzxnXyq2tCBgtW2aHSKl4IhxwR8HJZK6szawxNt5wtN1Gdgg12JrBkg==">
+        <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
       </form>
     </div>
   </li>
@@ -46,3 +48,6 @@
 
 <!-- L4: Convention in Rails, when generating the form on lists/show, the id=new_item by default
      whatever the class type of the object is, is what Rails uses for the form -->
+
+<!-- L25-46 are the same exact duplicated lines in the _item_li partial.  Rails uses objects, can't figure
+     a way for Rails to give partial but replace with {{mustache}} tag -->
