@@ -1,3 +1,6 @@
 HANDLERBARS AND JS PROTOTYPES WITH RAILS AND AJAX
 
-[]Hijack form with click event handler
+[x]Hijack form with click event handler
+  -on submit worked properly to prevent default
+
+[]Get data to submit form correctly
