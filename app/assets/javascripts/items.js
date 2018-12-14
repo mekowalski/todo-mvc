@@ -4,6 +4,14 @@ function Item() {
   this.id = attributes.id
 }
 
+
+//step 1: read the HTML from template
+Item.templateSource = $('#item-template').html()
+//step 2: convert it into a function that can render
+Item.template = Handlebars.compile(Item.templateSource)
+
+Item.template({descriptionL 'New List Item'})
+
 //to take care of var itemLi
 Item.prototye.renderLi = function() {
 
