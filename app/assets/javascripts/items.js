@@ -5,7 +5,8 @@ function Item(attributes) {
 }
 
 //instantiates new item on the json
-Item.success = function(json) {
+Item.always = function(json) {
+  json = JSON.parse(response.responseText)
   var item = new Item(json)
   var itemLi = item.renderLi()
 
@@ -16,8 +17,6 @@ Item.error = function(response) {
   console.log('You broke it', response)
 }
 
-//this gives an error where Item.templateSource is undefined
-//needs to be in document ready, so the doc can load and then run correctly
 $(function() {
   Item.templateSource = $('#item-template').html()
   Item.template = Handlebars.compile(Item.templateSource)
@@ -37,17 +36,18 @@ Item.formSubmit = function(e) {
   $.ajax({
     url: action,
     data: params,
-    dataType: 'json',
-    method: 'POST'
-    // accepts: 'application/json'
+    dataType: 'application/json',
+    method: 'POST',
+    accepts: 'application/json'
   })
-  .success(Item.success)
-  .error(Item.success)
+  .always(Item.always)
+  .error(Item.error)
 }
 
 $(function() {
   $('form#new_item').on('submit', Item.formSubmit)
 })
+
 
 //check out these:
 // respond_to
