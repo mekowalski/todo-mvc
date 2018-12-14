@@ -17,4 +17,8 @@ HANDLERBARS AND JS PROTOTYPES WITH RAILS AND AJAX
 
 121418
 -Still working on Handlebars
-[]Need to build a template
+[x]Need to build a template
+[]Create template
+  -Copy outerHTML from browser console
+  -make generic(item_22 is now item_{{id}})
+  -in lists/show.html.erb
