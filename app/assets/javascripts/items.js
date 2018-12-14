@@ -1,3 +1,5 @@
+
+
 $(function() {
   $('form#new_item').on('submit', function(e) {
     e.preventDefault()
@@ -15,7 +17,10 @@ $(function() {
     })
     .success(function(json) {
       //get back json to be a JS object of newly created item
-      console.log(json)
+      var item = new Item(json)
+      var itemLi = item.renderLi()
+
+      $('ul.todo-list').append(itemLi)
     })
   })
 })
