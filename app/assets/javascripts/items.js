@@ -33,21 +33,3 @@ $(function() {
     })
   })
 })
-
-
-// var source = $('#entry-template').html()
-// undefined
-// source => returns source code into JS variable that is a string
-// "
-//   <div class="entry">
-//     <h1>{{title}}</h1>
-//     <div class="body">
-//       {{body}}
-//     </div>
-//   </div>
-// "
-
-// var template = Handlebars.compile(source)
-// undefined
-// template => convert string into a template
-// ƒ e(a,b){return f||(f=d()),f.call(this,a,b)}
