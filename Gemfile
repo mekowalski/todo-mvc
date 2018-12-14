@@ -30,6 +30,8 @@ gem 'bcrypt', '~> 3.1.7'
 # Use Omniauth and Omniauth Github for login option
 gem 'omniauth'
 gem 'omniauth-github'
+# Use Handlebars_Assets with Rails asset pipeline and/or Sprockets
+gem 'handlebars_assets'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'

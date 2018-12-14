@@ -1,4 +1,13 @@
+//to create a new Item (var item = new Item(json))
+function Item() {
+  this.description = attributes.name
+  this.id = attributes.id
+}
 
+//to take care of var itemLi
+Item.prototye.renderLi = function() {
+
+}
 
 $(function() {
   $('form#new_item').on('submit', function(e) {
