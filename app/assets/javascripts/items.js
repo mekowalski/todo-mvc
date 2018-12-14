@@ -7,6 +7,11 @@ $(function() {
     var action = $form.attr('action')
     var params = $form.serialize()
 
+    //what to do when the server responds to this AJAX request
     $.post(action, params)
+    .success(function(json) {
+      //get back json to be a JS objecy of newly created item
+      console.log(json)
+    })
   })
 })
