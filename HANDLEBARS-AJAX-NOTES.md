@@ -12,3 +12,4 @@ HANDLERBARS AND JS PROTOTYPES WITH RAILS AND AJAX
 []Append to DOM
 
 -Added handlebars_assets gem, not sure if it's the same thing as Handlebars, Github docs are informative
+-Created Handlebars template in script tag, not done yet
