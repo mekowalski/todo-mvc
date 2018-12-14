@@ -21,58 +21,28 @@
 </section>
 
 <!-- embed a template -->
+<!-- make this generic, instead of item_22, it will be item_{{id}} -->
 <script id='item-template' type="text/x-handlebars-template">
-  <div class='entry'>
-    <h1>{{name}}</h1>
-    <div class='body'>
-      {{body}}
-    </div>
-  </div>
-</script>
+  <li class="item" id="item_22">
+    <div class="view">
+      <form class="edit_item" id="edit_item_22" action="/lists/11/items/22" accept-charset="UTF-8" method="post">
+        <input name="utf8" type="hidden" value="✓">
+        <input type="hidden" name="_method" value="patch">
+        <input type="hidden" name="authenticity_token" value="r9stadHoPnK3hMDHRYfPK8/51mg3RpItzxnXyq2tCBgtW2aHSKl4IhxwR8HJZK6szawxNt5wtN1Gdgg12JrBkg==">
+        <input name="item[status]" type="hidden" value="0">
+        <input class="toggle" type="checkbox" value="1" name="item[status]" id="item_status">
+      </form>
 
-<script id="entry-template" type="text/x-handlebars-template">
-  <div class="entry">
-    <h1>{{title}}</h1>
-    <div class="body">
-      {{body}}
+      <label>Learn Handlebars</label>
+
+      <form class="button_to" method="post" action="/lists/11/items/22">
+        <input type="hidden" name="_method" value="delete">
+        <input class="destroy" type="submit" value="x">
+        <input type="hidden" name="authenticity_token" value="r9stadHoPnK3hMDHRYfPK8/51mg3RpItzxnXyq2tCBgtW2aHSKl4IhxwR8HJZK6szawxNt5wtN1Gdgg12JrBkg==">
+      </form>
     </div>
-  </div>
+  </li>
 </script>
 
 <!-- L4: Convention in Rails, when generating the form on lists/show, the id=new_item by default
      whatever the class type of the object is, is what Rails uses for the form -->
-
-<!--
-var source = $('#entry-template').html()
-undefined
-source => returns source code into JS variable that is a string
-"
- <div class="entry">
-   <h1>{{title}}</h1>
-   <div class="body">
-     {{body}}
-   </div>
- </div>
-" -->
-
-<!--
-var template = Handlebars.compile(source)
-undefined
-template => convert string into a template
-ƒ e(a,b){return f||(f=d()),f.call(this,a,b)} -->
-
-<!--
-entry1 = {title: 'Entry1', body: 'Body for Entry 1'}
-{title: "Entry1", body: "Body for Entry 1"}
-entry2 = {title: 'Entry2', body: 'Body for Entry 2'}
-{title: "Entry2", body: "Body for Entry 2"}
-
-template(entry2) => read property of entry2 and injected it into the string
-"
-  <div class="entry">
-    <h1>Entry2</h1>
-    <div class="body">
-      Body for Entry 2
-    </div>
-  </div>
-" -->
