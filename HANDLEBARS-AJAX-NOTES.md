@@ -31,3 +31,6 @@ HANDLERBARS AND JS PROTOTYPES WITH RAILS AND AJAX
 -Ran into issues with respond_to, JSON return and options
 -use .always instead of .success
 -create json holder
+
+-Working with different options
+-Error in console regarding L22 of items.js
