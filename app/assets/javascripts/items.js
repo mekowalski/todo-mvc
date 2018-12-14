@@ -9,7 +9,7 @@ $(function() {
 
     //what to do when the server responds to this AJAX request
     $.post(action, params)
-    .success(function(json) {
+    .success(function(json) { //this didn't communicate to Rails server that it wants JSON back
       //get back json to be a JS object of newly created item
       console.log(json)
     })

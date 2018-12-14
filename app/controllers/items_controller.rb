@@ -5,8 +5,8 @@ class ItemsController < ApplicationController
     if @item.save
       # redirect_to list_path(@list)
       respond_to do |f|
-        f.html {redirect_to list_path(@list)}
         f.json {render json: @list}
+        f.html {redirect_to list_path(@list)}
       end
     else
       render 'lists/show'
