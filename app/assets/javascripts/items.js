@@ -4,10 +4,9 @@ function Item() {
   this.id = attributes.id
 }
 
-
-//step 1: read the HTML from template
+//this gives an error where Item.templateSource is undefined
+//needs to be in document ready, so the doc can load and then run correctly
 Item.templateSource = $('#item-template').html()
-//step 2: convert it into a function that can render
 Item.template = Handlebars.compile(Item.templateSource)
 
 Item.template({descriptionL 'New List Item'})
