@@ -6,8 +6,10 @@ function Item() {
 
 //this gives an error where Item.templateSource is undefined
 //needs to be in document ready, so the doc can load and then run correctly
-Item.templateSource = $('#item-template').html()
-Item.template = Handlebars.compile(Item.templateSource)
+$(function() {
+  Item.templateSource = $('#item-template').html()
+  Item.template = Handlebars.compile(Item.templateSource)
+})
 
 Item.template({descriptionL 'New List Item'})
 
