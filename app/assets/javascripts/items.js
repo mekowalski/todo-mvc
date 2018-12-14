@@ -20,6 +20,8 @@ Item.error = function(response) {
 $(function() {
   Item.templateSource = $('#item-template').html()
   Item.template = Handlebars.compile(Item.templateSource)
+  //L22: error message: "You must pass a string or Handlebars AST to Handlebars.compile. You passed undefined"
+  //not sure what this is
 })
 
 //to take care of var itemLi
