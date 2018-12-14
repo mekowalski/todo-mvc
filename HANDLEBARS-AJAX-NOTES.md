@@ -10,3 +10,5 @@ HANDLERBARS AND JS PROTOTYPES WITH RAILS AND AJAX
 
 []Get JSON object
 []Append to DOM
+
+-Added handlebars_assets gem, not sure if it's the same thing as Handlebars, Github docs are informative
