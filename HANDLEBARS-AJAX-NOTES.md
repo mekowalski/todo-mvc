@@ -41,3 +41,5 @@ HANDLERBARS AND JS PROTOTYPES WITH RAILS AND AJAX
 -json returns the object
 -json.responseText does return the ID, Description and list ID
 -response isn't defined
+
+-in .js file, revert Submit function back to previous method
