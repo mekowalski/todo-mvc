@@ -45,3 +45,5 @@ HANDLERBARS AND JS PROTOTYPES WITH RAILS AND AJAX
 -in .js file, revert Submit function back to previous method
 -returned to .always function but still having same issues
 -moving forward for now, i MAY come back to this
+
+-working on response still
