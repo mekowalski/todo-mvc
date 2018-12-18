@@ -6,9 +6,9 @@ function Item(attributes) {
 
 //instantiates new item on the json
 Item.success = function(json) {
-  debugger
+  // debugger
 
-  json = JSON.parse(response.responseText)
+  // json = JSON.parse(response.responseText)
   //json returns the object
   //json.responseText does return the ID, Description and list ID
   //response isb;t defined
