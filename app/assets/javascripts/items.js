@@ -15,7 +15,7 @@ Item.always = function(response) {
   //json returns the object
   //json.responseText does return the ID, Description and list ID
   //response isb;t defined
-  var item = new Item(json)
+  var item = new Item(response)
   //json is no longer defined
   var itemLi = item.renderLi()
 
