@@ -47,3 +47,9 @@ HANDLERBARS AND JS PROTOTYPES WITH RAILS AND AJAX
 -moving forward for now, i MAY come back to this
 
 -working on response still
+// json = JSON.parse(response)
+//the response is already a json object, doesn't make sense to parse it
+//where is response being defined
+//it is being chained on the .ajax call
+var item = new Item(json)
+//json is no longer defined
