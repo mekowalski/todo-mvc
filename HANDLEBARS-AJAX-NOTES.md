@@ -34,3 +34,10 @@ HANDLERBARS AND JS PROTOTYPES WITH RAILS AND AJAX
 
 -Working with different options
 -Error in console regarding L22 of items.js
+
+
+121819
+-struggling to debug the Item.success issue!!!
+-json returns the object
+-json.responseText does return the ID, Description and list ID
+-response isb;t defined
