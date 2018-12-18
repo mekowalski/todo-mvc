@@ -5,7 +5,7 @@ function Item(attributes) {
 }
 
 //instantiates new item on the json
-Item.success = function(json) {
+Item.always = function(json) {
 
   // debugger
   json = JSON.parse(response.responseText)
@@ -52,7 +52,7 @@ $(function() {
       method: 'POST'
       // accepts: 'application/json'
     })
-    .success(Item.success)
+    .always(Item.always)
     .error(Item.error)
   })
 })
