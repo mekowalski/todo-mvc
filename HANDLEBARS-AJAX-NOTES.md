@@ -40,4 +40,4 @@ HANDLERBARS AND JS PROTOTYPES WITH RAILS AND AJAX
 -struggling to debug the Item.success issue!!!
 -json returns the object
 -json.responseText does return the ID, Description and list ID
--response isb;t defined
+-response isn't defined
