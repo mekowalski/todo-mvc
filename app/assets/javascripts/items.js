@@ -5,8 +5,13 @@ function Item(attributes) {
 }
 
 //instantiates new item on the json
-Item.always = function(json) {
+Item.success = function(json) {
+  debugger
+
   json = JSON.parse(response.responseText)
+  //json returns the object
+  //json.responseText does return the ID, Description and list ID
+  //response isb;t defined
   var item = new Item(json)
   var itemLi = item.renderLi()
 
@@ -42,7 +47,7 @@ Item.formSubmit = function(e) {
     method: 'POST',
     accepts: 'application/json'
   })
-  .always(Item.always)
+  .always(Item.success)
   .error(Item.error)
 }
 
