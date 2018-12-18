@@ -7,7 +7,7 @@ function Item(attributes) {
 //instantiates new item on the json
 Item.always = function(response) {
 
-  debugger
+  // debugger
   // json = JSON.parse(response)
   //the response is already a json object, doesn't make sense to parse it
   //where is response being defined
