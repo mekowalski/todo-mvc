@@ -34,25 +34,26 @@ Item.prototype.renderLi = function() {
   return Item.template(this)
 }
 
-Item.formSubmit = function(e) {
-  e.preventDefault()
-  var $form = $(this)
-  var action = $form.attr('action')
-  var params = $form.serialize()
-
-  $.ajax({
-    url: action,
-    data: params,
-    dataType: 'application/json',
-    method: 'POST',
-    accepts: 'application/json'
-  })
-  .always(Item.success)
-  .error(Item.error)
-}
+// Item.formSubmit = function(e) {
+// }
 
 $(function() {
-  $('form#new_item').on('submit', Item.formSubmit)
+  $('form#new_item').on('submit', function(e) {
+    e.preventDefault()
+    var $form = $(this)
+    var action = $form.attr('action')
+    var params = $form.serialize()
+
+    $.ajax({
+      url: action,
+      data: params,
+      dataType: 'json',
+      method: 'POST'
+      // accepts: 'application/json'
+    })
+    .always(Item.success)
+    .error(Item.success)
+  })
 })
 
 
