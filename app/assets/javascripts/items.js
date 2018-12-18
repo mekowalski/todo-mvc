@@ -5,10 +5,12 @@ function Item(attributes) {
 }
 
 //instantiates new item on the json
-Item.always = function(json) {
+Item.always = function(response) {
 
   // debugger
   json = JSON.parse(response.responseText)
+  //where is response being defined
+  //it is being chained on the .ajax call
   //json returns the object
   //json.responseText does return the ID, Description and list ID
   //response isb;t defined
