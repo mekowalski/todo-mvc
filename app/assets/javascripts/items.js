@@ -6,9 +6,9 @@ function Item(attributes) {
 
 //instantiates new item on the json
 Item.success = function(json) {
-  // debugger
 
-  // json = JSON.parse(response.responseText)
+  // debugger
+  json = JSON.parse(response.responseText)
   //json returns the object
   //json.responseText does return the ID, Description and list ID
   //response isb;t defined
@@ -40,6 +40,7 @@ Item.prototype.renderLi = function() {
 $(function() {
   $('form#new_item').on('submit', function(e) {
     e.preventDefault()
+
     var $form = $(this)
     var action = $form.attr('action')
     var params = $form.serialize()
@@ -51,8 +52,8 @@ $(function() {
       method: 'POST'
       // accepts: 'application/json'
     })
-    .always(Item.success)
-    .error(Item.success)
+    .success(Item.success)
+    .error(Item.error)
   })
 })
 
