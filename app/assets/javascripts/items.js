@@ -8,13 +8,14 @@ function Item(attributes) {
 Item.always = function(response) {
 
   // debugger
-  json = JSON.parse(response.responseText)
+  // json = JSON.parse(response)
+  //the response is already a json object, doesn't make sense to parse it
   //where is response being defined
   //it is being chained on the .ajax call
   //json returns the object
   //json.responseText does return the ID, Description and list ID
   //response isb;t defined
-  var item = new Item(json)
+  var item = new Item(response)
   var itemLi = item.renderLi()
 
   $('ul.todo-list').append(itemLi)
