@@ -53,3 +53,5 @@ HANDLERBARS AND JS PROTOTYPES WITH RAILS AND AJAX
 //it is being chained on the .ajax call
 var item = new Item(json)
 //json is no longer defined
+
+-moving on again!!!
